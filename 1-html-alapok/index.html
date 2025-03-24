@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- Ez csak egy header ami megadja a böngészőnek, hogy miféle kódot kell feldolgoznia -->
+<html lang="hu"> <!-- A gyökér elem, ennek a gyereke (tartalma) minden más. Az attribútum pedig megadja az oldal tartalmát. Ezt nem kötelező megadni, de a böngészők és keresőmotorok számára hasznos információ tud lenni -->
+    <head> <!-- A head olyan elemeket tartalmaz, amik nem jelennek meg közvetlenűl a weboldalon, hanem a böngésző és a keresőmotorok számára szolgálnak információval-->
+        <!-- A meta tagek a keresőmotor számára szolgálnak információra, google keresésekkor tűnhet fel az összefoglaló szövegek innen kerülnek ki -->
+        <meta charset="UTF-8"> <!-- Na mondjuk ez pont a böngészőnek -->
+        <meta name="author" content="Chat GPT"/> <!-- Itt meg lehet adni az oldal szerzőjét -->
+        <meta name="description" content="A legfrissebb hírek"/> <!-- Itt meg lehet adni az oldal leírását -->
+        <meta name="keywords" content="webtervezés,webterv,HTML,CSS,PHP"/> <!-- Szerintem ez már egyértelmű -->
+        <title>Page Title</title> <!-- Ez a tabon megjelenő cím -->
+        <link rel="icon" href="icon.png"/> <!-- Itt megadhatod a tabon megjelenő ikon linkjét, ez egy relatív útvonal, ezekről lejjebb részletesen kerül szó  -->
+    </head>
+    <body>
+        <!-- Címek - minél nagyobb a szám, annál kisebb szintű cím -->
+        
+        <h1>Főcím</h1>
+        <h2>Alcím</h2>
+        <h3>Alabbcím</h3>
+        <h4>Alabbcím</h4>
+        <h5 id="header5">Annál is alabbcím</h5> <!-- Az idnek most még nincs jelentősége, egy abszolút elhagyható elem, majd később lesz részletezve -->
+        <h6>Legalabbcím</h6>
+
+        <p>Ez pedig egy bekezdés</p>
+
+        <!-- Kép beszúrása -->
+        <img src="../img/webstorm-git.png" alt="Webstrom IDE git kezelő felülete" width=500 height=500>
+        <img src="../img/vs-code-git.png" alt="Webstrom IDE git kezelő felülete" title="Webstorm VCS" width=500>
+
+        <br> <!-- br = sortörés -->
+
+        <!-- Linkek -->
+
+        <!-- weboldal -->
+        <a href="https://www.youtube.com">Link</a><br>
+
+        <!-- file megnyitása -->
+        <a href="../img/vs-code-git.png">File linkként</a><br>
+
+        <!-- fileon belül id alapján -->
+        <a href="#header5">Ugrás az annál is alabbcímhez</a><br>
+
+        <!-- egyéb link attribútumok -->
+        <a href="https://www.youtube.com" target="_self">Link ezen az oldalon (default)</a><br>
+        <a href="https://www.youtube.com" target="_blank">Link új oldaon</a><br>
+        <a href="https://www.youtube.com" title="cím">Link címmel</a><br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
